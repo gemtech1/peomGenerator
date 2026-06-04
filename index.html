@@ -7,27 +7,30 @@
     <title>AI Enlish Poem Generator</title>
   </head>
   <body>
+     <div class="container">
     <header>
       <h1>AI English Poem Generator</h1>
     </header>
 
     <main>
-      <form>
+      <form id="poem-generator-form>
         <input
           type="text"
           placeholder="Enter the topic of the English poem"
           autofocus
           required
           autocomplete="off"
+          class = "steps"
         />
          <input type="submit" value="Search" class="search-button"  id = seachPoem/>
         <input type="submit" />
       </form>
-      <div>
+      <div class="poem" id = "poem">
       The Grave and the Rose
         <br />
     A Lover's Complaint 
       </div>
+      
     </main>
  <footer>
         <p>
@@ -43,6 +46,8 @@
           >
         </p>
       </footer>
+      </div>
+
 
     <script src="src/index.js"></script>
   </body>
