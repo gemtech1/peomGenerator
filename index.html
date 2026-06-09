@@ -3,34 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>AI Enlish Poem Generator</title>
+    <title>AI English Poem Generator</title>
   </head>
   <body>
-     <div class="container">
-    <header>
-      <h1>AI English Poem Generator</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>AI English Poem Generator</h1>
+      </header>
 
-    <main>
-      <form id="poem-generator-form>
-        
-         <input type="text" placeholder= "Enter the topic of the English poem"  autofocus = "required"
-            autocomplete="off"
-            class="instructions"/>  
-            <input type="text" placeholder ="Enter the topic of the English poem" autofocus = "required"  autocomplete="off" class="instructions" id = "poem-generator-formm/>
-                 <input type="submit" class="submit-button" />
-         <input type="submit" value="Search" class="search-button"  id = "seachPoem"/>
-      </input>
-      </form>
-      <div class="poem" id = "poem">
-      The Grave and the Rose
-        <br />
-    A Lover's Complaint 
-      </div>
-      
-    </main>
+      <main>
+        <div class="form-container">
+          <form id="poem-generator-form" class ="form">
+            <input
+              type="text"
+              placeholder="Enter the topic of a French poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Flower, Paris or Cheese</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
+      </main>
+
  <footer>
         <p>
           This project was coded by
